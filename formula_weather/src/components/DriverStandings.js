@@ -6,6 +6,7 @@ const API_URL = 'http://ergast.com/api/f1/current/driverStandings.json';
 
 export default function DriverStandings() {
   const [standings, setStandings] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const getDrivers = async () => {
     const response = await fetch(API_URL);
@@ -13,6 +14,7 @@ export default function DriverStandings() {
     const driverStandings =
       data.MRData.StandingsTable.StandingsLists[0].DriverStandings;
     setStandings(driverStandings);
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -22,10 +24,12 @@ export default function DriverStandings() {
   console.log(standings);
 
   return (
-    <div>
-      {standings.map((item, index) => {
-        return <Driver key={index} {...item} />;
-      })}
-    </div>
+    <>
+      {isLoading && '...loading'}
+      {!isLoading &&
+        standings.map((item, index) => {
+          return <Driver key={index} {...item} />;
+        })}
+    </>
   );
 }

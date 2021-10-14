@@ -1,18 +1,20 @@
 import React from 'react';
-
+import styles from './Driver.module.css';
 export default function Driver({
   points,
   position,
-  permanentNumber,
-  Driver: { givenName, familyName },
+  Driver: { permanentNumber, givenName, familyName },
 }) {
   return (
-    <section>
-      <div>{position}</div>
-      <div>{permanentNumber}</div>
-      <div>{familyName}</div>
-      <div>{givenName}</div>
-      <div>{points}</div>
-    </section>
+    <div className={styles.container}>
+      <section className={styles.driverCell}>
+        <div>{position}</div>
+        <div className={styles.driverNum}>{permanentNumber}</div>
+        <div className={styles.driverName}>
+          {familyName} {givenName}
+        </div>
+        <div className={styles.driverPoints}>{points}</div>
+      </section>
+    </div>
   );
 }

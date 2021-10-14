@@ -1,0 +1,32 @@
+.container {
+  margin: 5px;
+
+  width: 240px;
+}
+
+.driverCell {
+  display: flex;
+  outline: 1px solid;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.driverCell > div {
+  margin-left: 5px;
+}
+
+.driverCell > :first-child {
+  width: 20px;
+}
+
+.driverNum {
+  width: 20px;
+}
+
+.driverName {
+  width: 140px;
+}
+
+.driverPoints {
+  width: 45px;
+}
