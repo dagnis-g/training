@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import Driver from './Driver';
+import styles from './DriverStandings.module.css';
 
 const API_URL = 'http://ergast.com/api/f1/current/driverStandings.json';
 
@@ -24,12 +25,12 @@ export default function DriverStandings() {
   console.log(standings);
 
   return (
-    <>
+    <section className={styles.container}>
       {isLoading && '...loading'}
       {!isLoading &&
         standings.map((item, index) => {
           return <Driver key={index} {...item} />;
         })}
-    </>
+    </section>
   );
 }

@@ -1,0 +1,21 @@
+.container {
+  width: 200px;
+}
+
+.tableCell {
+  display: flex;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.tableCell > div {
+  margin-left: 5px;
+}
+
+.position {
+  width: 20px;
+}
+
+.name {
+  width: 130px;
+}
