@@ -19,7 +19,7 @@ a:active {
   color: inherit;
   height: 100%;
   width: 100%;
-  transition: color 0.15s;
+  transition: color 0.2s;
 }
 
 a:hover,
@@ -27,6 +27,34 @@ a:focus,
 a:active {
   color: #00000069;
 }
+
+.btn {
+  background-color: #005aa3;
+  color: azure;
+  margin-top: 3rem;
+  margin-right: auto;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 2px;
+  padding: 1rem;
+  transition: opacity 0.2s;
+}
+
+.btn-secondary {
+  background-color: #f77825;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*                       */
 
 .navbar-container {
   display: flex;
@@ -38,7 +66,7 @@ a:active {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  height: 3.5rem;
+  height: 4rem;
 }
 
 .navbar > ul {
@@ -51,4 +79,50 @@ a:active {
   color: #000000c4;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+/*                  landing                   */
+
+.title-picture__container {
+  background: url(./pic1.jpg) rgba(0, 0, 0, 0.534) no-repeat center center;
+  background-blend-mode: multiply;
+  height: 550px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.landing {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing > h1 {
+  color: rgb(253, 253, 253);
+  margin-top: 4rem;
+  font-size: 3rem;
+}
+
+.landing > p {
+  margin-top: 2rem;
+  width: 800px;
+  font-size: 1.3rem;
+  color: #cecece;
+}
+
+/*         two more titles            */
+
+.small-titles__section {
+  background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+}
+
+.small-titles__container {
+  width: 800px;
+  display: flex;
+  justify-content: center;
 }
