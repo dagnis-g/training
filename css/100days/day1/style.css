@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --main-color: #f0f8ff;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 7.5rem;
+  color: var(--main-color);
+}
+
+h2 {
+  font-size: 2.3rem;
+  color: var(--main-color);
+  margin-top: -20px;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-image: -o-linear-gradient(45deg, #2c0aaace, #0d8dd6d0);
+  background-image: linear-gradient(45deg, #2c0aaace, #0d8dd6d0);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.simts {
+  position: relative;
+  width: 300px;
+  height: 180px;
+}
+
+.simts > div {
+  -webkit-box-shadow: 2px 2px 5px 1px #2525253d;
+  box-shadow: 2px 2px 5px 1px #2525253d;
+}
+
+.viens-uz-leju {
+  background-color: var(--main-color);
+  width: 30px;
+  height: 150px;
+  position: absolute;
+  top: 50px;
+  left: 18px;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+.viens-pa-kreisi {
+  background-color: var(--main-color);
+  width: 28px;
+  height: 70px;
+  position: absolute;
+  top: 43px;
+  left: -1px;
+  border-radius: 5px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+}
+
+.nulle {
+  height: 150px;
+  width: 150px;
+  border: 30px solid var(--main-color);
+  border-radius: 50%;
+}
+
+.nulle1 {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  z-index: 4;
+}
+
+.nulle2 {
+  position: absolute;
+  top: 50px;
+  left: 170px;
+}
+
+@media screen and (max-device-width: 414px) {
+  .simts {
+    top: -20px;
+  }
+
+  .container {
+    width: 320px;
+    height: 320px;
+  }
+  .nulle1 {
+    left: 30px;
+  }
+  .nulle2 {
+    left: 150px;
+  }
+  .viens-uz-leju {
+    left: 24px;
+  }
+  .viens-pa-kreisi {
+    left: 10px;
+  }
+}
