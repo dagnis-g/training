@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  background-color: #3faf82;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.line {
+  background-color: #ffffff;
+  height: 15px;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px #86868657;
+}
+
+.top-line {
+  position: relative;
+  top: -15px;
+}
+
+.bottom-line {
+  position: relative;
+  bottom: -15px;
+}
+
+/* animacijas */
+
+.top-line-animation {
+  animation: top-line-move 500ms forwards;
+}
+.top-line-animation-reverse {
+  animation: top-line-move-reverse 500ms forwards;
+}
+
+.middle-line-animation {
+  animation: middle-line-move 500ms forwards;
+}
+
+.middle-line-animation-reverse {
+  animation: middle-line-move-reverse 500ms forwards;
+}
+
+.bottom-line-animation {
+  animation: bottom-line-move 500ms forwards;
+}
+
+.bottom-line-animation-reverse {
+  animation: bottom-line-move-reverse 500ms forwards;
+}
+
+@keyframes top-line-move {
+  0% {
+    top: -15px;
+  }
+  50% {
+    top: 15px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 15px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes top-line-move-reverse {
+  0% {
+    top: 15px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 15px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: -15px;
+  }
+}
+
+@keyframes middle-line-move {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes middle-line-move-reverse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bottom-line-move {
+  0% {
+    top: 15px;
+  }
+  50% {
+    top: -15px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: -15px;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes bottom-line-move-reverse {
+  0% {
+    top: -15px;
+    transform: rotate(-45deg);
+  }
+  50% {
+    top: -15px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 15px;
+  }
+}
