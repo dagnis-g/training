@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Constructor from './Constructor';
+import PropagateLoader from 'react-spinners/PropagateLoader';
 
 const API_URL = 'https://ergast.com/api/f1/current/constructorStandings.json';
 
@@ -27,7 +28,7 @@ export default function ConstructorStandings() {
   }, []);
   return (
     <div>
-      {isLoading && '...loading'}
+      {isLoading && <PropagateLoader />}
       {!isLoading &&
         standings.map((item, index) => {
           return <Constructor key={index} {...item} />;

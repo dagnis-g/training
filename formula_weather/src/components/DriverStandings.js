@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Driver from './Driver';
 import styles from './DriverStandings.module.css';
+import PropagateLoader from 'react-spinners/PropagateLoader';
 
 const API_URL = 'http://ergast.com/api/f1/current/driverStandings.json';
 
@@ -25,8 +26,14 @@ export default function DriverStandings() {
   console.log(standings);
 
   return (
-    <section className={styles.container}>
-      {isLoading && '...loading'}
+    <section>
+      <div className={styles.driverCell}>
+        <div>P</div>
+        <div className={styles.driverNum}>Nr</div>
+        <div className={styles.driverName}>Driver</div>
+        <div className={styles.driverPoints}>Pts</div>
+      </div>
+      {isLoading && <PropagateLoader />}
       {!isLoading &&
         standings.map((item, index) => {
           return <Driver key={index} {...item} />;
