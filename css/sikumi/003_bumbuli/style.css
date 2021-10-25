@@ -1,0 +1,166 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 115, 0, 0.685);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.bumba1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.171);
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.171);
+  position: absolute;
+  -webkit-animation: bumba1-animacija 2000ms infinite alternate;
+  animation: bumba1-animacija 2000ms infinite alternate;
+}
+
+.bumba2 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.171);
+  box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.171);
+  position: absolute;
+  z-index: 3;
+  -webkit-animation: bumba2-animacija 2000ms infinite alternate;
+  animation: bumba2-animacija 2000ms infinite alternate;
+}
+.bumba3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.171);
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.171);
+  z-index: 4;
+  -webkit-animation: bumba3-animacija 2000ms infinite alternate;
+  animation: bumba3-animacija 2000ms infinite alternate;
+}
+
+@-webkit-keyframes bumba1-animacija {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+@keyframes bumba1-animacija {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes bumba2-animacija {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@keyframes bumba2-animacija {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes bumba3-animacija {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  2% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@keyframes bumba3-animacija {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  2% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
