@@ -1,5 +1,7 @@
 :root {
   --main-bg-color: #f7f9fb;
+  --secondary-bg-color: #353535;
+  --secondary-clr-text: #ff5400;
 }
 html {
   scroll-behavior: smooth;
@@ -12,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -34,6 +36,7 @@ a {
   font-size: 1.5rem;
   position: fixed;
   z-index: 22;
+  border-bottom: 1px solid var(--secondary-clr-text);
 }
 
 .logo {
@@ -42,7 +45,7 @@ a {
 }
 
 .logo > span {
-  color: #ff5400;
+  color: var(--secondary-clr-text);
 }
 
 .title-logo {
@@ -51,7 +54,7 @@ a {
 }
 
 .title-logo > span {
-  color: #ff5400;
+  color: var(--secondary-clr-text);
 }
 
 .nav-items {
@@ -65,14 +68,14 @@ a {
 .nav-items > a :hover,
 .nav-items > a :active,
 .nav-items > a :focus {
-  color: #ff5400;
+  color: var(--secondary-clr-text);
 }
 
 #hamburger {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   body {
     overflow-x: hidden;
   }
@@ -128,9 +131,138 @@ a {
   line-height: 30px;
 }
 
-/*       pakalpojumi       */
+/*       par mums      */
 
-#pakalpojumi-container {
+#par-mums-container {
   background-color: var(--main-bg-color);
   height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#par-mums-container > img {
+  width: 400px;
+}
+
+.par-mums_info {
+  width: 400px;
+}
+
+.par-mums_info > h4 {
+  font-size: 1.2rem;
+  color: var(--secondary-clr-text);
+  margin: 2rem 0;
+}
+
+.par-mums_info > h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.par-mums_info > p {
+  letter-spacing: 3px;
+  line-height: 200%;
+  width: 410px;
+}
+
+@media screen and (max-width: 920px) {
+  #par-mums-container {
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .par-mums_info > h4 {
+    text-align: center;
+  }
+
+  .par-mums_info > h2 {
+    width: 80%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .par-mums_info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .par-mums_info > p {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .par-mums_bilde {
+    display: none;
+  }
+}
+
+/*    pakalp0jumi     */
+
+#pakalpojumi-container {
+  background: url('./pakalpojumi-bg-big.jpg') rgba(0, 0, 0, 0.671) no-repeat
+    center center;
+  background-blend-mode: multiply;
+  height: calc(100vh - 8rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#pakalpojumi-container > h1 {
+  font-size: 2.3rem;
+  color: var(--secondary-clr-text);
+}
+
+.pakalpojumi {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pakalpojums {
+  width: 300px;
+  height: 400px;
+  background-color: var(--main-bg-color);
+  border: 2px solid var(--secondary-clr-text);
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.171);
+}
+
+.pakalpojums > h3 {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.pakalpojums > p {
+  text-align: center;
+  width: 90%;
+  margin: 3rem auto;
+  line-height: 2rem;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  #pakalpojumi-container > h1 {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .pakalpojumi {
+    flex-direction: column;
+  }
+  .pakalpojums {
+    margin-bottom: 3rem;
+  }
+  #pakalpojumi-container {
+    height: fit-content;
+  }
 }
