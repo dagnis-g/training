@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title-page {
+  background-image: url("../street.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-attachment: fixed;
+  opacity: 0.7;
+}
+
+.main-header {
+  background: gray;
+  padding: 1rem;
+  color: aliceblue;
+}
+
+.section-1 {
+  height: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(206, 206, 206, 0.479);
+}
+
+.section-1-title {
+  margin-top: 4rem;
+  color: rgb(99, 99, 99);
+  font-size: 2rem;
+}
+
+.section-1-p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  width: 80%;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.section-2 {
+  background-image: url("../skats.jpg");
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-attachment: fixed;
+}
+
+.section-2-header {
+  color: rgb(185, 185, 185);
+}
+
+.section-3 {
+  height: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.section-3-title {
+  margin-top: 4rem;
+
+  font-size: 2rem;
+}
+
+.section-3-p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  width: 80%;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.bilde-3 {
+  background: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(88, 88, 88, 0.7)),
+      to(rgba(88, 88, 88, 0.7))
+    ),
+    url("../bilde3.jpg");
+  background: -o-linear-gradient(
+      bottom,
+      rgba(88, 88, 88, 0.7),
+      rgba(88, 88, 88, 0.7)
+    ),
+    url("../bilde3.jpg");
+  background: linear-gradient(
+      0deg,
+      rgba(88, 88, 88, 0.7),
+      rgba(88, 88, 88, 0.7)
+    ),
+    url("../bilde3.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-attachment: fixed;
+}
+
+.bilde-3-teksts {
+  color: rgb(255, 255, 255);
+}
+
+.section-4 {
+  height: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.section-4-title {
+  margin-top: 4rem;
+
+  font-size: 2rem;
+}
+
+.section-4-p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  width: 80%;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
