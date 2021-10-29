@@ -25,6 +25,7 @@ li {
 a {
   text-decoration: none;
 }
+
 /*                navbar                     */
 #main-nav {
   width: 100vw;
@@ -209,7 +210,8 @@ a {
   background: url('./pakalpojumi-bg-big.jpg') rgba(0, 0, 0, 0.671) no-repeat
     center center;
   background-blend-mode: multiply;
-  height: calc(100vh - 8rem);
+  color: var(--secondary-bg-color);
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -218,8 +220,10 @@ a {
 }
 
 #pakalpojumi-container > h1 {
+  margin-top: 2rem;
   font-size: 2.3rem;
   color: var(--secondary-clr-text);
+  border-bottom: 2px solid var(--main-bg-color);
 }
 
 .pakalpojumi {
@@ -231,7 +235,7 @@ a {
 
 .pakalpojums {
   width: 300px;
-  height: 400px;
+  height: 404px;
   background-color: var(--main-bg-color);
   border: 2px solid var(--secondary-clr-text);
   border-radius: 8px;
@@ -246,9 +250,24 @@ a {
 .pakalpojums > p {
   text-align: center;
   width: 90%;
-  margin: 3rem auto;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 2rem;
+
   letter-spacing: 3px;
+}
+
+.cena {
+  background-color: var(--secondary-clr-text);
+  color: var(--main-bg-color);
+  width: 130px;
+  height: 60px;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 1rem auto;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -265,4 +284,31 @@ a {
   #pakalpojumi-container {
     height: fit-content;
   }
+}
+
+/*     kontakti       */
+
+#kontakti-container {
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  color: var(--secondary-bg-color);
+}
+
+.info > h3 {
+  margin: 2rem;
+}
+
+/*   footer    */
+
+footer {
+  height: 5rem;
+  color: var(--main-bg-color);
+  background-color: var(--secondary-bg-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

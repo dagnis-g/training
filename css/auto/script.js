@@ -1,5 +1,6 @@
 const hamburger = document.querySelector('#hamburger');
 const navItems = document.querySelector('.nav-items');
+const copyright = document.querySelector('.copyright');
 hamburger.addEventListener('click', () => {
   navItems.classList.toggle('nav-active');
 
@@ -11,3 +12,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.remove('fa-times');
   }
 });
+
+const date = new Date().getFullYear();
+
+copyright.innerHTML = `${date} &copy Visas tiesības aizsargātas`;
