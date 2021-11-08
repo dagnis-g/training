@@ -17,7 +17,7 @@ function Product({ product }) {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={product.image}
+        image={product.image.url}
         title={product.name}
       />
       <CardContent>
@@ -26,7 +26,7 @@ function Product({ product }) {
             {product.name}
           </Typography>
           <Typography variant="h5" gutterbottom>
-            {product.price}
+            {product.price.formated_with_symbol}
           </Typography>
         </div>
         <Typography variant="body2" color="textSecondary">
