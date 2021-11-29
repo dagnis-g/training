@@ -36,7 +36,7 @@ const getWeatherHorly = function (lat, long, date, hour) {
       method: 'GET',
       headers: {
         'x-rapidapi-host': 'visual-crossing-weather.p.rapidapi.com',
-        'x-rapidapi-key': '9cabe92d5amsh697f65493d982f2p120404jsn418191058bc9',
+        'x-rapidapi-key': API_KEY
       },
     }
   )
